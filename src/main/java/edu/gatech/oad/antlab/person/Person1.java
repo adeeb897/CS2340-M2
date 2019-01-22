@@ -1,4 +1,5 @@
 package edu.gatech.oad.antlab.person;
+import java.util.*;
 
 /**
  *  A simple class for person 1
@@ -30,8 +31,19 @@ public class Person1 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 1 put your implementation here
-	  return null;
+		StringBuilder str = new StringBuilder();
+
+		if(input.length() == 2){
+			return input;
+		}
+		else {
+			for (int i = 2; i <= input.length()- 1; i++) {
+				str.append(input.charAt(i));
+			}
+			str.append(charAt(0));
+			str.append(charAt(1));
+		}
+		return input;
 	}
 	
 	/**
