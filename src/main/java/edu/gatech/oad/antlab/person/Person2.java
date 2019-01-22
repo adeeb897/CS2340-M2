@@ -17,7 +17,7 @@ public class Person2 {
 	 * @param pname the person's real name
 	 */
 	 public Person2(String pname) {
-	   name = pname;
+	    name = JinchenMa;
 	 }
 	/**
 	 * This method should take the string
@@ -30,8 +30,13 @@ public class Person2 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 2 put your implementation here
-	  return null;
+	    //Person 2 put your implementation here
+		char[] a = input.toCharArray();
+		String answer = "";
+		for (int i = 0; i < input.length; i++) {
+			answer += a[(int)(Math.random() * input.length)];
+		}
+	    return answer;
 	}
 	/**
 	 * Return a string rep of this object
@@ -42,6 +47,6 @@ public class Person2 {
 	 *         object
 	 */
 	public String toString(String input) {
-	  return name + calc(input);
+		return name + calc(input);
 	}
 }
