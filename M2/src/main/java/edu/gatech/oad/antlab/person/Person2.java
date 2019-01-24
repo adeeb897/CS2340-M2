@@ -33,8 +33,8 @@ public class Person2 {
 	    //Person 2 put your implementation here
 		char[] a = input.toCharArray();
 		String answer = "";
-		for (int i = 0; i < input.length; i++) {
-			answer += a[(int)(Math.random() * input.length)];
+		for (int i = 0; i < input.length(); i++) {
+			answer += a[(int)(Math.random() * input.length())];
 		}
 	    return answer;
 	}
