@@ -40,8 +40,8 @@ public class Person1 {
 			for (int i = 2; i <= input.length()- 1; i++) {
 				str.append(input.charAt(i));
 			}
-			str.append(str.charAt(0));
-			str.append(str.charAt(1));
+			str.append(charAt(0));
+			str.append(charAt(1));
 		}
 		return input;
 	}
