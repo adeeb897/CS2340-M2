@@ -17,7 +17,7 @@ public class Person2 {
 	 * @param pname the person's real name
 	 */
 	 public Person2(String pname) {
-	    name = JinchenMa;
+	    name = pname;
 	 }
 	/**
 	 * This method should take the string
@@ -33,8 +33,8 @@ public class Person2 {
 	    //Person 2 put your implementation here
 		char[] a = input.toCharArray();
 		String answer = "";
-		for (int i = 0; i < input.length; i++) {
-			answer += a[(int)(Math.random() * input.length)];
+		for (int i = 0; i < input.length(); i++) {
+			answer += a[(int)(Math.random() * input.length())];
 		}
 	    return answer;
 	}

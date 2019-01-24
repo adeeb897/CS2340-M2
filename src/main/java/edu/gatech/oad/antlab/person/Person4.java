@@ -34,7 +34,7 @@ public class Person4 {
       // Okay
       String n = "";
       for (int i = 0; i < input.length(); i++) {
-        n += input.charAt(i) + 1;
+        n += (char) (input.charAt(i) + 1);
       }
       return n;
     }
